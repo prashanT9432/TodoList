@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #f1f3f4;
+    font-family: system-ui;
+
+}
+
+.container {
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    background: darkgray;
+    border-radius: 10px;
+    min-width: 450px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%, -50%);
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: x-large;
+    padding: 20px;
+}
+
+#newtask {
+    position: relative;
+    padding: 10px 20px;
+
+    i {
+        position: absolute;
+        left: 20px;
+        top: 16px;
+        padding: 9px 8px;
+        color: #f75d02;
+    }
+}
+
+#newtask input {
+    width: 75%;
+    height: 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px 12px 12px 35px;
+    color: #7a7878;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border: none;
+    background-image: var('<i class="fa-solid fa-list-check"></i>');
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: #0d75ec;
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #f75d02;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#tasks {
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: darkgray;
+    padding: 30px 20px;
+}
+
+.task {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f3f4;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+.task span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button {
+    border: none;
+}
+#checkbox {
+    margin: 7px;
+    cursor: pointer;
+}
+.delete:hover {
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    margin-left: 15px;
+    padding: 10px;
+    color: gray;
+    font-size: medium;
+
+    p {
+        color: #e85703;
+        padding-right: 5px;
+        font-weight: 700;
+    }
+}
+hr {
+    background-color: snow;
+}

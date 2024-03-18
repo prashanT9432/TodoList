@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="styleSheet" href="index.css">
+    <script src="https://kit.fontawesome.com/301907f500.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDos</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header section -->
+        <header>
+            <p class="p">T O D
+                <i class="fa-regular fa-circle-check p" style="color: #f75d02"></i>
+        </header>
+        <hr>
+        <!-- input field section -->
+        <div id="newtask">
+            <input type="text" placeholder="Type your todo list"><i class="fa-solid fa-list-check"></i>
+            <button id="push">Add</button>
+        </div>
+        <hr>
+        <!-- tasks list -->
+        <div id="tasks"></div>
+        <hr>
+        <!-- footer section -->
+        <footer id="footer">
+            <p id="taskLeft">0</p>
+            tasks left
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
